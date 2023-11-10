@@ -1,0 +1,90 @@
+/* Path: frontend/src/app/shared/ui/header/header.component.html */
+header {
+  background-color: whitesmoke;
+  padding: 0rem;
+  border-bottom: 0.1rem solid blueviolet;
+  position: sticky;
+  max-height: 4rem;
+  max-width: 100%;
+}
+
+a {
+  color: blueviolet;
+  opacity: 0.8;
+}
+
+a:hover {
+  color: blueviolet;
+  opacity: 1;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: flex;
+    align-items: center;
+}
+
+.logo-image {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin: 0.5rem 1.5rem;
+}
+
+.user span{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input{
+    height: 2rem;
+    width: 25rem;
+    border-radius: 1rem 0 0 1rem;
+    border: 0.1rem solid blueviolet;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    outline: none;
+}
+
+.search button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    border: 0.1rem solid blueviolet;
+    background-color: whitesmoke;
+    color: white;
+    margin: 0rem;
+    outline: none;
+}
+
+.search button:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
