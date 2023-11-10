@@ -42,3 +42,6 @@ testem.log
 Thumbs.db
 
 *.db
+.angular/
+*.db-shm
+*.db-wal
