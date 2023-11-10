@@ -1,0 +1,145 @@
+.tag-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  width: 80%;
+}
+
+.tag-list .tag {
+  background-color: blueviolet;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  /* margin: 0 .25rem .25rem 0; */
+  font-size: small;
+  cursor: pointer;
+  color: white;
+  /* opacity: 0.5; */
+}
+
+.tag-list .tag:hover {
+  background-color: rebeccapurple;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.tag-list .tag.active {
+  background-color: rebeccapurple;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+table th {
+  background-color: blueviolet;
+  color: white;
+  padding: 0.5rem;
+  font-size: medium;
+}
+table th:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+table th:last-child {
+  border-radius: 0 1rem 0 0;
+}
+
+table td {
+  padding: 0.5rem;
+  font-size: small;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: auto;
+}
+.btn.btn-primary {
+  background-color: blueviolet;
+  color: white;
+}
+.btn.btn-primary:hover {
+  background-color: rebeccapurple;
+  font-weight: bold;
+  opacity: 0.8;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 1rem;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 1rem 0;
+}
+
+table tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+table td button {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search input {
+  height: 2rem;
+  width: 50%;
+  border-radius: 1rem 0 0 1rem;
+  border: 0.1rem solid blueviolet;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  outline: none;
+}
+
+.search button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  border: 0.1rem solid blueviolet;
+  border-left: 0rem;
+  background-color: whitesmoke;
+  color: white;
+  margin: 0rem;
+  outline: none;
+}
+
+.search button:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
