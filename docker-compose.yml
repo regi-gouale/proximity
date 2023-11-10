@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: angularfrontend
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+
+  nginx:
+    container_name: middlenginx
+    image: nginx:stable-alpine
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.middle.conf:/etc/nginx/conf.d/default.conf:rw
+    depends_on:
+      - backend
+      
+  backend:
+    container_name: pocketbasebackend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/pb_data:/pb/pb_data:rw
+    build: 
+      context: ./backend
+      dockerfile: ./Dockerfile
