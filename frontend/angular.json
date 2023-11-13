@@ -53,7 +53,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fontawesome/css/all.min.css",
+              "src/assets/styles/tailwind.css"
             ],
             "scripts": []
           },
