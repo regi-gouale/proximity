@@ -13,6 +13,20 @@ export default [
             (m) => m.ListMembersComponent
           ),
       },
+      {
+        path: 'members/search/:term',
+        loadComponent: () =>
+          import('./list-members/list-members.component').then(
+            (m) => m.ListMembersComponent
+          ),
+      },
+      {
+        path: 'members/roles/:role',
+        loadComponent: () =>
+          import('./list-members/list-members.component').then(
+            (m) => m.ListMembersComponent
+          ),
+      }
     ],
   },
 ] as Routes;

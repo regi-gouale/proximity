@@ -53,6 +53,19 @@ export class MembersService implements OnInit {
     return roles;
   }
 
+  getAllMembersByRole(role: string): Promise<MemberModel[]> {
+    return this.getMembers().then((members) => {
+      return members.filter((member) => {
+        console.log(member.rolesData);
+        return (
+          member.rolesData.filter((roleData) => {
+            return roleData.name == role;
+          }).length > 0
+        );
+      });
+    });
+  }
+
   async deleteMember(id: string) {
     return await this.pocketBase.collection('members').delete(id);
   }

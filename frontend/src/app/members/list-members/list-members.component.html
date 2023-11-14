@@ -3,10 +3,7 @@
 <div class="text">
   <h1>Membres</h1>
 </div>
-<div class="search">
-      <input type="text" placeholder="Rechercher un membre" />
-      <button class="search-button">🔍</button>
-    </div>
+<app-search></app-search>
 <div class="tag-list">
   <div class="tag" *ngFor="let role of roles">
     {{ role }}
@@ -34,10 +31,10 @@
         </td>
         <td class="actions">
           <button class="btn btn-primary" (click)="updateMember(member.id)">
-            📝
+            <i class="fa-solid fa-pen-to-square"></i>
           </button>
           <button class="btn btn-danger" (click)="deleteMember(member.id)">
-            ❌
+            <i class="fa-solid fa-circle-xmark" style="color: #ec0914"></i>
           </button>
         </td>
       </tr>
